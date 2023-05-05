@@ -1,19 +1,5 @@
-@decorate()
-export class Foo {
+import { Foo } from "./foo"
 
-  @decorate()
-  get name() {
-    return "hello"
-  }
-
-  @decorate()
-  sayHi() {
-    return "hello"
-  }
-}
-
-function decorate() {
-  return function(target, {kind}) {
-    console.log(target, kind)
-  }
-}
+const f = new Foo();
+console.log(f.sayHi());
+console.log(f.name);

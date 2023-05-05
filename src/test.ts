@@ -1,4 +1,4 @@
-import { Foo } from "./index"
+import { Foo } from "./foo"
 
 test('say hi', async()=>{
   const f = new Foo();
